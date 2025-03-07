@@ -1,3 +1,4 @@
+// Мудрость кода хранится здесь, выбирай случайные фразы, как судьба направляет тебя
 let phrases = [
   { text: 'Пусть сегодняшний день будет наполнен волшебством и радостью!', image: 'https://source.unsplash.com/featured/?pink,flower' },
   { text: 'Ты сияешь, как розовый рассвет!', image: 'https://source.unsplash.com/featured/?pink,sunrise' },
@@ -12,53 +13,30 @@ let phrases = [
 ];
 
 function getRandomElement(arr) {
-  let randIndex = Math.floor(Math.random() * arr.length);
-  return arr[randIndex];
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 let button = document.querySelector('.button');
-let phrase = document.querySelector('.phrase');
+let phraseElem = document.querySelector('.phrase');
 let advice = document.querySelector('.advice');
-let image = document.querySelector('.image');
+// Элемент "image" не трогаем – капибара с тобой всегда!
 
-// Обработчик клика для смены фразы и изображения
-button.addEventListener('click', function () {
-  let randomElement = getRandomElement(phrases);
-  phrase.textContent = randomElement.text;
-  image.src = randomElement.image;
-
-  // Изменяем размер текста блока "advice" в зависимости от длины фразы
-  if (randomElement.text.length > 40) {
-    advice.style.fontSize = '33px';
-  } else {
-    advice.style.fontSize = '42px';
-  }
-});
-
-// Дополнительный обработчик клика для создания ссылки и удаления изображения
 button.addEventListener('click', function () {
   let randomElement = getRandomElement(phrases);
   
-  // Создаем ссылку для дополнительного перехода
-  let link = document.createElement('a');
-  link.href = 'http://bonustime.ru'; // Укажите корректный URL
-  link.target = '_blank'; // Открытие ссылки в новой вкладке
+  // Обновляем мудрые слова, да озарит они твой путь
+  phraseElem.textContent = randomElement.text;
   
-  // Добавляем ссылку внутрь элемента phrase
-  phrase.appendChild(link);
+  // Подстраиваем размер шрифта – да решит он, как великий учитель, меру красоты
+  advice.style.fontSize = randomElement.text.length > 40 ? '33px' : '42px';
   
-  // Устанавливаем текст ссылки равным случайной фразе
-  link.textContent = randomElement.text;
-  
-  // Удаляем изображение, если это требуется для эффекта
-  if (image) {
-    image.remove();
-  }
-  
-  if (randomElement.text.length > 40) {
-    advice.style.fontSize = '33px';
-  } else {
-    advice.style.fontSize = '42px';
+  // Если бонусная ссылка еще не создана – даруем ее, как секреты Силы
+  if (!phraseElem.querySelector('a')) {
+    let link = document.createElement('a');
+    link.href = 'http://bonustime.ru';
+    link.target = '_blank';
+    link.style.marginLeft = '10px';
+    link.textContent = "Узнать больше";
+    phraseElem.appendChild(link);
   }
 });
-

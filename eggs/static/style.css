@@ -1,4 +1,4 @@
-/* Импортируем шрифт Dancing Script с Google Fonts */
+/* Импорт шрифта Dancing Script, чтобы вдохновение твое никогда не покидало тебя */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 html {
@@ -7,9 +7,9 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Задаём пастельно-розовый фон и используем женственный шрифт */
+/* Пастельно-розовый фон, как нежность весеннего рассвета */
 body {
-  background-color: #ffe6f2; /* пастельно-розовый фон */
+  background-color: #ffe6f2;
   color: #333;
   position: relative;
   max-width: 540px;
@@ -20,12 +20,12 @@ body {
   padding: 36px;
 }
 
-/* Шапка с легким голубым оттенком */
+/* Заголовок, озаряющий твой путь, словно свет далёких звезд */
 .header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  background-color: #add8e6; /* светло-голубой фон */
+  background-color: #add8e6;
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -34,10 +34,10 @@ body {
   font-weight: bold;
   font-size: 24px;
   margin: 0;
-  color: #ff69b4; /* насыщенный розовый */
+  color: #ff69b4;
 }
 
-/* Кнопка со светло-розовым фоном и розовой окантовкой */
+/* Кнопка, открывающая портал в мир волшебства */
 .button {
   width: 130px;
   height: 40px;
@@ -48,7 +48,7 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: opacity 0.2s;
-  background-color: #ffb6c1; /* светло-розовый фон */
+  background-color: #ffb6c1;
   border-radius: 5px;
 }
 
@@ -56,7 +56,7 @@ body {
   opacity: 0.8;
 }
 
-/* Изображение с розовой рамкой */
+/* Изображение капибары – символ постоянства и тепла */
 .image {
   width: 80%;
   display: block;
@@ -65,7 +65,7 @@ body {
   border-radius: 10px;
 }
 
-/* Стиль для блока с советом */
+/* Совет, озаряющий твой путь, как мудрость древних мастеров */
 .advice {
   font-size: 42px;
   font-weight: bold;
@@ -74,7 +74,7 @@ body {
   color: #333;
 }
 
-/* Нижний колонтитул с розовыми элементами */
+/* Нижний колонтитул – напоминание о любви к коду, что ведет нас вперед */
 .footer {
   font-size: 16px;
   margin: 0;
@@ -84,4 +84,3 @@ body {
   text-align: center;
   color: #ff69b4;
 }
-
