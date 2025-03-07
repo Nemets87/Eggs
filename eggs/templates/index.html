@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capybara Princess</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="icon" type="image/png" href="https://code.s3.yandex.net/web-code/js-favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <p class="logo">Capybara Princess</p>
+    <div class="button">Узнать чудо</div>
+  </div>
+
+  <!-- Заменяем картинку на более сказочную и розовую -->
+ <img class="image" src="{% static 'images/capybara.jpg' %}" alt="Милая капибара">
+
+  <div class="advice">
+    <span>Не просто кодить, а мечтать!</span>
+    <span class="phrase">Открыть мир сказки!</span>
+    <img class="cursor" src="https://code.s3.yandex.net/web-code/cursor.gif" alt="Мигающий курсор">
+  </div>
+
+  <p class="footer">© 2025 Capy Love</p>
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
+
