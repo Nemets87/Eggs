@@ -1,7 +1,7 @@
 // Мудрость кода хранится здесь, выбирай случайные фразы, как судьба направляет тебя
 let phrases = [
   { text: 'Пусть сегодняшний день будет наполнен волшебством и радостью!', image: 'https://source.unsplash.com/featured/?pink,flower' },
-  { text: 'Ты сияешь, как розовый рассвет!', image: 'https://source.unsplash.com/featured/?pink,sunrise' },
+  { text: 'Ты сияешь, как Розовая Пантера!', image: 'https://source.unsplash.com/featured/?pink,sunrise' },
   { text: 'Каждый миг — это маленькое чудо!', image: 'https://source.unsplash.com/featured/?butterfly' },
   { text: 'Жизнь — сказка, и ты — её героиня!', image: 'https://source.unsplash.com/featured/?fairytale' },
   { text: 'Мир вокруг так прекрасен, когда ты улыбаешься!', image: 'https://source.unsplash.com/featured/?happy,smile' },
