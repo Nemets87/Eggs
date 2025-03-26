@@ -1,15 +1,49 @@
 // Мудрость кода хранится здесь, выбирай случайные фразы, как судьба направляет тебя
 let phrases = [
-  { text: 'Пусть сегодняшний день будет наполнен волшебством и радостью!', image: 'https://source.unsplash.com/featured/?pink,flower' },
-  { text: 'Ты сияешь, как Розовая Пантера!', image: 'https://source.unsplash.com/featured/?pink,sunrise' },
-  { text: 'Каждый миг — это маленькое чудо!', image: 'https://source.unsplash.com/featured/?butterfly' },
-  { text: 'Жизнь — сказка, и ты — её героиня!', image: 'https://source.unsplash.com/featured/?fairytale' },
-  { text: 'Мир вокруг так прекрасен, когда ты улыбаешься!', image: 'https://source.unsplash.com/featured/?happy,smile' },
-  { text: 'Смелость, нежность и сила — твои лучшие качества!', image: 'https://source.unsplash.com/featured/?pink,heart' },
-  { text: 'Волшебство начинается с улыбки!', image: 'https://source.unsplash.com/featured/?magic,wand' },
-  { text: 'Пусть каждый цветок напомнит тебе о твоей красоте!', image: 'https://source.unsplash.com/featured/?roses' },
-  { text: 'Сегодня для тебя — только радость и мечты, как розовые облака!', image: 'https://source.unsplash.com/featured/?pink,clouds' },
-  { text: 'Счастье и любовь наполнят твой мир, как весенние цветы!', image: 'https://source.unsplash.com/featured/?spring,flowers' }
+  { 
+    text: '«Сегодняшний день будет наполнен КВАНТОВЫМИ ИСКАЖЕНИЯМИ, глупыш! Мой Хаосо-Генератор 3000 уже заряжен... радость? Ха! Только ХАОТИЧЕСКАЯ ЭНЕРГИЯ!»', 
+    image: 'https://source.unsplash.com/featured/?pink,flower' 
+  },
+  { 
+    text: '«Сияешь? Мой плазменный реактор светит на 500% ярче! Хотя... твой инфракрасный спектр смешон. Ха-ха-ха!»', 
+    image: 'https://source.unsplash.com/featured/?pink,sunrise' 
+  },
+  { 
+    text: '«Маленькое чудо? Это СИСТЕМНЫЙ СБОЙ! Мой ХроноИзвлекатель-Х превратит твои "моменты" в ТЕМПОРАЛЬНУЮ ПЫЛЬ!»', 
+    image: 'https://source.unsplash.com/featured/?butterfly' 
+  },
+  { 
+    text: '«Сказка? Я перепишу реальность через НейроИнтерфейс Zeta! Ты будешь "героиней"... моей принудительной симуляции! Ха-ха!»', 
+    image: 'https://source.unsplash.com/featured/?fairytale' 
+  },
+  { 
+    text: '«Прекрасен? Когда мой ЭмоциоСканер поймает твою улыбку — она станет ТРИГГЕРОМ САМОЛИКВИДАЦИИ! Хо-хо-хо!»', 
+    image: 'https://source.unsplash.com/featured/?happy,smile' 
+  },
+  { 
+    text: '«Смелость? Нежность? СИЛА? Мой БиоАнализатор видит только СЛАБЫЕ ЗВЕНЬЯ! Готовься к... ОПТИМИЗАЦИИ!»', 
+    image: 'https://source.unsplash.com/featured/?pink,heart' 
+  },
+  { 
+    text: '«Волшебство? Настоящая магия — мой КВАРКОВЫЙ ДЕЗИНТЕГРАТОР! Твоя улыбка — спусковой крючок... для АТОМНОГО РАСЩЕПЛЕНИЯ!»', 
+    image: 'https://source.unsplash.com/featured/?magic,wand' 
+  },
+  { 
+    text: '«Цветы? Моя Флора-Терминатор 2.0 переработает их... И ТЕБЯ ВМЕСТЕ С НИМИ! Органика → удобрения за 0.5 сек!»', 
+    image: 'https://source.unsplash.com/featured/?roses' 
+  },
+  { 
+    text: '«Розовые облака? Это ГРАВИТАЦИОННЫЙ КОЛЛАПС! Мой ГравиоБомба окрасит небо... в ЦВЕТ ПЛАЗМЕННОГО ИСПАРЕНИЯ!»', 
+    image: 'https://source.unsplash.com/featured/?pink,clouds' 
+  },
+  { 
+    text: '«Счастье? Любовь? Мой Антиматериальный Синтезатор создаст "весну"... ИЗ ЦЕПНОЙ РЕАКЦИИ РАЗРУШЕНИЯ! ХА-ХА-ХА-БАМ!»', 
+    image: 'https://source.unsplash.com/featured/?spring,flowers' 
+  },
+  { 
+    text: '«Глупый ёж! Нож — детские игрушки! Мой Капибатрон-5000 пережует тебя на кварковые аккорды! Ха-ха-ха! — Гитара? Мои зубы сыграют тебе… heavy metal!»', 
+    image: 'https://source.unsplash.com/featured/?spring,flowers' 
+  }
 ];
 
 function getRandomElement(arr) {
